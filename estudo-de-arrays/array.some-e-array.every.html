@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const guests = [
+            {name : "Marcos", age: 23},
+            {name : "Angelica", age: 27},
+            {name : "Luana", age: 17},
+            {name : "Leticia", age: 45},
+            {name : "Raphael", age: 18},
+        ]
+
+        // Existem maiores de idade na lista de convidados?
+        const hasAdults = guests.some(guest => guest.age >= 18)
+
+        // Todos os convidados são maiores de idade?
+        const everyioneIsAnAdult = guests.every(guest => guest.age >= 18)
+
+    </script>
+</body>
+</html>
