@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Class Constructor
+        
+        /* O constructor nós usamos para
+        construir objetos de maneira rápida no
+        javascript */
+        
+        class Human {
+            hungry = true
+
+            /* O metodo constructor chamamos como
+            se fosse uma função e dentro dos parâmetros
+            pedimos o nome. */
+            constructor(nome) {
+                /* Dessa forma criamos uma variável nome
+                e referenciamos o nome do parâmetro, usando this 
+                porque  ele está dentro da nossa classe, e logo após
+                usamos oque vai ser recebido, no caso, queremos
+                criar uma variável e receber o nome que passarem. */
+                this.nome = nome
+            }
+
+            eat() {
+                this.hungry = false
+            }
+        }
+
+        /* E aqui passamos o nome, dessa maneira
+        o constructor irá construir um objeto e
+        colocar o nome do Humano com o nome que
+        passarmos. */
+        const person = new Human("Leonardo")
+
+
+        console.log(person)
+        
+
+    </script>
+</body>
+</html>

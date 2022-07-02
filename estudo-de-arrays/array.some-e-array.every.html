@@ -8,6 +8,13 @@
 </head>
 <body>
     <script>
+        // Array Some e Array Every
+
+        /* O array some e Array Every é usado
+        para verificar se existe uma condição
+        dentro de uma array ou objeto. Exemplo: */
+
+        /* Aqui criamos uma Array de Objetos */
         const guests = [
             {name : "Marcos", age: 23},
             {name : "Angelica", age: 27},
@@ -17,10 +24,23 @@
         ]
 
         // Existem maiores de idade na lista de convidados?
+        /* Aqui verificamos se existe alguém de maior na lista
+        de convidados, e o resultado é: */
+        // True
+        /* O some, verifica se tem só um valor que corresponde
+        a condição que passamos e para. */
         const hasAdults = guests.some(guest => guest.age >= 18)
 
         // Todos os convidados são maiores de idade?
-        const everyioneIsAnAdult = guests.every(guest => guest.age >= 18)
+        /* Aqui verificamos se todos são adultos e o resultado é: */
+        // False
+        /* O Array.every verifica se cada valor corresponde a condição
+        que passamos, ou seja, aqui abaixo se todos não forem maior ou
+        igual 18, então não são todos que tem 18 anos. */
+        const everyoneIsAnAdult = guests.every(guest => guest.age >= 18)
+
+        console.log(hasAdults)
+        console.log(everyoneIsAnAdult)
 
     </script>
 </body>

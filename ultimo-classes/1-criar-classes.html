@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Classes
+
+        /* Para criar uma classe é muito fácil
+        fazemos da seguinte maneira: */
+        class Human {
+            /* Depois passamos algo pra ele
+            como se fosse um objeto */
+            hungry = true
+
+            /* Podemos também colocar funções dentro
+            de uma classe, podendo assim chamar ela
+            e alterar items dentro da nossa classe. */
+            
+            /* Aqui criamos uma função chamada eat
+            obs.: não é preciso chamar o function dentro
+            de uma classe. */
+            eat() {
+                /* Logo após falamos que a variável hungry
+                irá ser false, mas para nos referenciarmos
+                a variável hungry nós usamos o "this". */
+                // O this serve para referenciar algo dentro da classe
+                this.hungry = false
+            }
+        }
+
+        /* Aqui criamos um novo humano de acordo
+        com a nossa classe Human essa person herda
+        todos os itens que tem a classe Human, olha só */
+        const person = new Human()
+
+        console.log(person)
+        
+
+    </script>
+</body>
+</html>

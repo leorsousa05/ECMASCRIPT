@@ -8,11 +8,24 @@
 </head>
 <body>
     <script>
+        // Array Map
+
+        /* O array map faz basicamente a mesma coisa
+        que o forEach. Exemplo: */
+
+        /* Aqui criamos uma constante frutas */
         const fruits = ['banana', 'morango', 'manga']
 
-        const capitalizedFruits = fruits.map(fruit => {
-            return fruit.toUpperCase()
-        })
+        /* Dessa maneira, chamamos as frutas e transformamos
+        todas strings nela em maiusculo. */
+        const capitalizedFruits = fruits.map(fruit => fruit.toUpperCase())
+
+        // A diferença entre o forEach e o Map é que
+        // se usado o forEach para fazer o mesmo ele
+        // Retorna undefined, a não ser que o
+        // "return" seja chamado. Já o map ele retorna
+        // diretamente o resultado.
+        console.log(capitalizedFruits)
     </script>
 </body>
 </html>

@@ -8,7 +8,14 @@
 </head>
 <body>
     <script>
-        const students = [
+        // Array Filter
+
+        /* O Array Filter irá filtrar cada item dentro
+        de um objeto javascript, e retornará apenas oque
+        você pedir. Exemplo: */
+
+        /* Criamos um array de objetos chamada Estudantes */
+        const estudantes = [
             {name: 'Lucas', grade: 8},
             {name: 'Mario', grade: 2},
             {name: 'Jean', grade: 10},
@@ -16,8 +23,11 @@
             {name: 'Marcos', grade: 5},
         ]
 
-        const flushed = students.filter(pupil => {
-            return pupil.grade >= 6
+        /* E logo após usamos o filter, assim filtramos nossa array
+        objeto, mostrando na constante apenas alunos que tiveram
+        a nota maior ou igual a 6. */
+        const estudantesAprovados = estudantes.filter(aprovados => {
+            return aprovados.grade >= 6
         })
     </script>
 </body>

@@ -25,7 +25,7 @@ console.log(...amigos)
 
 /* Colocando os 3 pontos atrás desempacotamos
 a nossa array, e ela é mostrada como se cada
-item como uma string única, como se tivessemos
+item fosse uma string única, como se tivessemos
 usada a maneira acima dessa para desenpacotar
 a nossa array. */
 
@@ -35,11 +35,11 @@ let novoAmigo = [...amigos, "Felipe"]
 
 /* Dessa maneira, colocamos o Felipe na
 última casa da array e adicionamos sem ter
-que usar o .push(),dessa formas, nós
+que usar o .push(), dessa forma, nós
 criamos uma array nova chamada novoAmigo
 e logo após desempacotamos a array amigos
 dentro da nossa nova array, e adicionamos
-na nossa array o nome "Felipe". */
+no final da nossa array o nome "Felipe". */
 
 console.log(...novoAmigo)
 

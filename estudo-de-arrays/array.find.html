@@ -8,7 +8,13 @@
 </head>
 <body>
     <script>
-        const students = [
+        // Array Find
+
+        /* O array find encontra itens dentro uma array
+        ou objetos. Exemplo: */
+
+        /* Criamos uma constante */
+        const estudantes = [
             {name: 'Lucas', grade: 8},
             {name: 'Mario', grade: 2},
             {name: 'Jean', grade: 10},
@@ -16,12 +22,15 @@
             {name: 'Marcos', grade: 5},
         ]
 
-        const specificStudent = students.find(pupil => {
-            if(pupil.name === 'Jean') {
+        /* E logo após procuramos um estudante específico
+        na nossa array de objetos e passamos para uma nova
+        constante. */
+        const estudanteEspecifico = estudantes.find(estudante => {
+            if(estudante.name === 'Jean') {
                 return true
             }
             
-            console.log(pupil)
+            console.log(estudante)
         })
     </script>
 </body>

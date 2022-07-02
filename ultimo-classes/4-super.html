@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Super
+        
+        /* O super é igual o extends e os dois são
+        usados juntos, mas o super ele captura os
+        dados do constructor da outra classe e puxa
+        pra essa. Exemplo: */
+
+        /* Aqui criamos duas classes */
+        class Cachorro {
+            pelos = true
+            constructor(idade) {
+                this.idade = idade
+            }
+        }
+
+        /* Aqui usamos o extends */
+        class Human extends Cachorro {
+            hungry = true
+
+            constructor(nome) {
+                /* E aqui utilizamos o super()
+                referenciando denovo o nome para
+                podermos juntar o nosso constructor
+                com o constructor da classe extendida. */
+                super(nome)
+                this.nome = nome
+            }
+
+            eat() {
+                this.hungry = false
+            }
+        }
+
+        /* E aqui passamos agora a idade, que antes
+        só tinha na classe Cachorro. */
+        const person = new Human(21, "Leonardo")
+
+
+        console.log(person)
+        
+
+    </script>
+</body>
+</html>

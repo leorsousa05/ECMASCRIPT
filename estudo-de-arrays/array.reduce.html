@@ -8,7 +8,14 @@
 </head>
 <body>
     <script>
-        const students = [
+        // Array Reduce
+
+        /* O Array Reduce ele lê uma array e
+        soma oque a gente quiser com o valor 
+        inicial. Exemplo: */
+
+        /* Aqui criamos uma Array de objetos */
+        const estudantes = [
             {name: 'Lucas', grade: 8},
             {name: 'Mario', grade: 2},
             {name: 'Jean', grade: 10},
@@ -16,14 +23,28 @@
             {name: 'Marcos', grade: 5},
         ]
 
-        const classroomTotalPoints = students.reduce(
-            (prev, current) => {
-                console.log(prev)
-                console.log(current)
-                return prev + current.grade
+        /* Aqui então pegamos o a array de objetos e
+        então pegamos a nota(grade) de cada aluno e
+        somamos com o acumulador(que começa pelo valor
+        inicial que passarmos no fim da função). */
+        const classroomTotalPoints = estudantes.reduce(
+            (acumulador, elemento) => {
+                console.log(acumulador)
+                console.log(elemento)
+                return acumulador + elemento.grade
             }, 
             0
         )
+        // Dessa forma o resultado final que iremos receber vai ser
+        // 31
+        // O array reduce pegou todas as notas e somou
+        // com o valor inicial, assim nós temos a soma
+        // das notas do alunos
+
+        // Obs.: Se eu estiver errado me corrijam, também
+        // não entendi muito bem a finalidade do array Reduce
+        // Só aplicando em algum projeto para sabermos :)
+        console.log(classroomTotalPoints)
 
     </script>
 </body>

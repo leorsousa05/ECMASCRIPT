@@ -8,7 +8,13 @@
 </head>
 <body>
     <script>
-
+        // Continuação do conteúdo de Async e Await
+        
+        /* Como dito anterior, o resolve é caso consiga
+        resolver a Promise, se a promise não for resolvida
+        entra o parâmetro reject, que por sua vez, traz o
+        erro a nossa tela, com a mensagem que passarmos. Ou
+        seja, caso seja rejeitado, ele lança o erro. */
         function handleClick() {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
@@ -17,16 +23,28 @@
             })
         }
 
+        // Then e Catch
+        /* Dessa forma é um pouco mais fácil de entender até
+        o resolve e o reject. */
+
+        /* O then significa "então", da seguinte maneira usamos
+        ele para depois que for executada a função handleClick(),
+        ele usar o resolve. */
         const result = handleClick()
             .then(res => {
                 console.log(123 === res)
                 console.log("finalizou")
             })
+            /* Caso o resolve não resolva a condição
+            então nós usamos o catch, para lançar o erro. */
             .catch(err => {
                 console.log("Houve um erro")
                 console.log(err)
             })
 
+            // Ao invés de usar console.log() aqui no código
+            // Use no terminal do Dev Tools, e irá printar de
+            // forma que você entenda melhor.
     </script>
 </body>
 </html>

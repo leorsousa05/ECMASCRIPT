@@ -8,13 +8,25 @@
 </head>
 <body>
     <script>
-        const fruits = ['banana', 'morango', 'manga', 'abacate']
+        // ForEach
+
+        /* O forEach ele captura cada item de uma array
+        como o nome já diz "Para cada". Exemplo */
+
+        /* Criamos uma constante */
+        const frutas = ['banana', 'morango', 'manga', 'abacate']
 
         function eatAllFruits() {
-            fruits.forEach((fruit, index) => {
+            /* Para cada fruta, essa função vai retornar
+            um console log falando qual fruta ele acabou de comer
+            de acordo com a ordem da array. */
+            frutas.forEach((fruta, index) => {
                 console.log(`hummm, acabei de comer ${fruit}`)
                 console.log(`Ele era o item ${index + 1} da minha lista`)
             })
+
+            // Para o forEach Retornar algo, você terá que chamar manualmente
+            // Obs.: Testa rodando o html, fica mais fácil de entender esse ;)
         }
     </script>
 </body>

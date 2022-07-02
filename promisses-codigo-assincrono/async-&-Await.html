@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Async e Await
+
+        /* O Async e Await são usados para
+        criar funções assíncronas, usando o
+        async, podemos criar uma função e falarmos
+        para ela esperar um comando acabar e depois
+        de terminar, ira começar o outro. Exemplo: */
+
+        /* Aqui criamos uma função que faz um timeout
+        automático. */
+        function sleep(ms) {
+            /* chamamos o new para criar uma promessa
+            ou seu seja, criar uma nova promessa. */
+            return new Promise(
+                /* O resolve é um parâmetro usado para 
+                caso tenha sucesso em resolver a função 
+                e então retorna um valor */
+
+                /* Neste caso chamamos o resolve e abrimos
+                uma função, e na função usamos um setTimeOut
+                e com o setTimeOut falamos pro resolve retornar
+                true(para que apenas a função não seja preenchida
+                com nada) e colocamos o tempo que o programa irá
+                parar entre aspas "dormir" ou parar */
+                resolve => {setTimeout(() => resolve(true), ms)}
+            )
+        }
+
+        /* E aqui chamamos o async e colocamos o nome da
+        função de handleClick simulando um clique na tela.
+        Quando o clique ocorrer, a função irá esperar 5 
+        segundos e logo após irá retornar a string "batata" */
+        async function handleClick() {
+            await sleep(5000)
+            return 'batata'
+        }
+
+        const batata = handleClick()
+
+        console.log(batata)
+
+        // Para testar no computador, abra o arquivo no google
+        // o resultado no console vai ser pendent se você abrir
+        // a função que está sendo executada antes dos 5 segundos
+        // então coloque no console do dev tools o comando
+        // console.log(batata)
+
+    </script>
+</body>
+</html>

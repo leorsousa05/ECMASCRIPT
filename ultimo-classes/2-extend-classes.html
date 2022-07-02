@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Class Extends
+
+        /* Com o extends podemos fazer
+        com que uma classe herde o item
+        de outra. por exemplo */
+
+        /* Aqui criamos duas classes */
+
+        /* Obs.: Classes sempre são criadas
+        com a primeira letra em maiúsculo. */
+        class Animal {
+            /* Dentro de uma classe criamos
+            variáveis sem ter que chamar o
+            let ou const para criarmos a 
+            variável. */
+            pelos = false
+        }
+
+        /* Aqui para Human herdar algo de animal,
+        usamos o Extends, ou seja ele extende a
+        classe Human para Animal */
+        class Human extends Animal {
+            hungry = true
+
+            eat() {
+                this.hungry = false
+            }
+        }
+
+        /* Dessa maneira, quando criamos uma pessoa,
+        ela tem tudo que tem na variável Animal. */
+
+        const person = new Human()
+
+        console.log(person)
+        
+
+    </script>
+</body>
+</html>

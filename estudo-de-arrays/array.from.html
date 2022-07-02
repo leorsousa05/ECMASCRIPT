@@ -8,15 +8,37 @@
 </head>
 <body>
     <script>
+        // Array From
+
+        /* Com o Array From transformamos qualquer
+        coisa em uma array. Por exemplo: */
+
+        /* Aqui criamos 3 constantes, duas são
+        umas string e a outra junta duas strings
+        e forma uma array. */
         const batata = "batata"
         const legal = "legal"
         const arr = Array.from(batata + legal)
+        
+        /* Quando printarmos, o array from vai
+        transformar as strings em uma array,
+        cortando elas em cada letra */
         console.log(arr)
 
 
+        /* Aqui criamos uma função que recebe
+        um argumento como parâmetro */
         function greet() {
+
+            /* Aqui pegamos cada arguments da função
+            (pode ser quantas quiser)e criamos uma 
+            constante que vai guardar cada argumento
+            dentro de um colchetes, fazendo assim a
+            constante ser uma array. */
             const args = Array.from(arguments)
             
+            /* E aqui pegamos cada item da array
+            e printamos ela com o forEach */
             args.forEach(argument => {
                 console.log(`Hello, ${argument}`)
             });
