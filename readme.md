@@ -53,3 +53,6 @@ Pasta: ultimo-classes
 3. Método Constructor - Método construtor para construir objetos.
 
 4. Super - Função para herdar constructor de outras classes já extendidas.
+
+## Typescript
+Conteúdo para continuação de estudos para o typescript: https://github.com/leorsousa05/Typescript
