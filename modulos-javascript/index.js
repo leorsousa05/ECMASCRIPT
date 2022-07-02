@@ -1,11 +1,14 @@
 // Modulos Javascript
 
+
 /* Para podermos usar modulos, usamos o nodeJS e
 o gerenciador de pacote do mesmo, o npm(Node Package Manager) */
 
 /* Você pode baixar usando o seguinte link: */
 
 // https://nodejs.org/en/download/
+
+// Obs.: Precisa ter um arquivo index sempre.
 
 /* Aqui instalamos um modulo chamado chalk.
 Usado para colocar uma cor de background em
